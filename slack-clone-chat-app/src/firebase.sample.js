@@ -1,0 +1,18 @@
+import firebase from "firebase/app";
+
+import "firebase/auth";
+import "firebase/database";
+import "firebase/storage";
+
+// Initialize Firebase
+var config = {
+  apiKey: "YOUR-API-KEY",
+  authDomain: "YOUR-DOMAIN",
+  databaseURL: "YOUR-URL",
+  projectId: "YOUR-PROJECT-ID",
+  storageBucket: "YOUR-STORAGE-BUCKET",
+  messagingSenderId: "YOUR-SENDER-ID"
+};
+firebase.initializeApp(config);
+
+export default firebase;
